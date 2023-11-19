@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px 20px;
+    display: grid;
+    grid-template: 1fr max-content / 1fr 280px;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer img {
+    height: 100%;
+}
+
+.info {
+    grid-column: 2 / 3;
+}
+
+.info h2 {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    font-weight: normal;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.decimals {
+    position: relative;
+    bottom: calc(2rem - 1.3rem);
+}
+
+.info button {
+    display: block;
+    background-color: #3581fb;
+    width: 200px;
+    text-align: center;
+    padding: 8px 0;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    margin-top: 30px;
+}
+
+.info button:hover {
+    cursor: pointer;
+}
+
+.condition, .condition + i, .soldQuantity {
+    color: gray;
+    margin-right: 5px;
+}
+
+.condition {
+    text-transform: capitalize;
+}
+
+.condition + i {
+    font-size: .2rem;
+    position: relative;
+    bottom: 5px;
+}
+
+.description {
+    grid-column: 1 / span 2;
+    margin-top: 40px;
+    max-width: 800px;
+}
+
+.description h3 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.description p {
+    color: gray;
+}

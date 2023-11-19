@@ -1,0 +1,19 @@
+:root {
+    --main-yellow: #ffe500;
+    --light-gray: #bfbfbf;
+    --text-black: rgb(51, 51, 51);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Helvetica, sans-serif;
+}
+
+input {
+    outline: none;
+}
